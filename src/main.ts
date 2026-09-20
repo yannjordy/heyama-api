@@ -22,7 +22,7 @@ async function bootstrap() {
   app.enableCors({
     origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
-    credentials: true,
+    credentials: false,
   });
 
   app.useStaticAssets(join(__dirname, '..', 'uploads'), {

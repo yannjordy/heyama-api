@@ -7,7 +7,7 @@ import { ObjectItem } from './objects.service';
 
 @WebSocketGateway({
   cors: {
-    origin: ['http://localhost:3000', 'http://localhost:3001'],
+    origin: '*',
     credentials: true,
   },
 })
